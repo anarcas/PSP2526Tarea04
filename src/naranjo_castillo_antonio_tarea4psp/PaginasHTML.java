@@ -25,7 +25,7 @@ public class PaginasHTML {
         return "<html><head>"
                 + "<title>ITV del Infierno</title>"
                 + "<meta charset='UTF-8'>"
-                + "<meta http-equiv='refresh' content='2'>"
+                + "<meta http-equiv='refresh' content='2; url=/inicio'>"
                 + "<style>"
                 + "body {"
                 + "  font-family: Arial, sans-serif;"
@@ -111,11 +111,9 @@ public class PaginasHTML {
                 + "<br><br>"
                 + "<button type='submit'>Confirmar</button>"
                 + "</form>"
-                + "<br><a href='/'>Volver</a>"
+                + "<br><a href='/inicio'>Volver</a>"
                 + "</body></html>";
     }
-
-
 
     public static String htmlPasarITV(String matriculaPrellenada, String resultadoFragmento) {
         String valor = (matriculaPrellenada != null) ? matriculaPrellenada : "";
@@ -138,7 +136,7 @@ public class PaginasHTML {
                 + "<button type='submit'>Entrar a línea</button>"
                 + "</form>"
                 + "<div class='resultado'>" + resultadoFragmento + "</div>"
-                + "<br><a href='/'>Volver</a>"
+                + "<br><a href='/inicio'>Volver</a>"
                 + "</body></html>";
     }
 
@@ -157,10 +155,10 @@ public class PaginasHTML {
             + "<body>"
             + "<h1>Error 404</h1>"
             + "<p>La página que buscas no existe o no se encuentra disponible.</p>"
-            + "<a class='button' href='/'>Volver al inicio</a>"
+            + "<a class='button' href='/inicio'>Volver al inicio</a>"
             + "</body></html>";
-    
-        public static String htmlResultado(String contenido) {
+
+    public static String htmlResultado(String contenido) {
         return "<div style='width:100%; text-align:center;'>"
                 + "<h1 style='font-size:28px; margin-bottom:20px; color:#ffdddd;'>Resultado de la Inspección</h1>"
                 + "<div class='box' style='background:#550000; padding:15px; width:45%; margin:auto; border-radius:10px; box-shadow:0 0 10px #00000088; font-size:20px; color:white;'>"
@@ -175,8 +173,8 @@ public class PaginasHTML {
                 + "</div>"
                 + "</div>";
     }
-    
-       /**
+
+    /**
      * Construye estructura HTML del resultado de la inspección.
      *
      * @param matricula Identificador del coche.
@@ -184,7 +182,7 @@ public class PaginasHTML {
      * @return Cadena formateada para su inserción en el HTML.
      */
     public static String generarResultadoHTML(String matricula, Map<String, String> resultados) {
-        
+
         // Se declaran/instancian las variables
         StringBuilder sb = new StringBuilder();
         boolean aprobada = true;
@@ -210,4 +208,79 @@ public class PaginasHTML {
 
         return sb.toString();
     }
+
+    // Método login página de registro y logueo
+    public static String login(String msg) {
+        return "<!DOCTYPE html>"
+                + "<html lang='es'>"
+                + "<head>"
+                + "<link rel=icon href=data:,/>"
+                + "<meta charset='UTF-8'>"
+                + "<title>Login ITV</title>"
+                + "<style>"
+                + "body {"
+                + "  font-family: Arial, sans-serif;"
+                + "  background: linear-gradient(135deg, #74ebd5, #9face6);"
+                + "  display: flex;"
+                + "  justify-content: center;"
+                + "  align-items: center;"
+                + "  height: 100vh;"
+                + "  margin: 0;"
+                + "}"
+                + ".container {"
+                + "  background: white;"
+                + "  padding: 40px;"
+                + "  border-radius: 15px;"
+                + "  box-shadow: 0 8px 16px rgba(0,0,0,0.2);"
+                + "  width: 350px;"
+                + "}"
+                + "h2 {"
+                + "  text-align: center;"
+                + "}"
+                + "input {"
+                + "  width: 100%;"
+                + "  padding: 10px;"
+                + "  margin: 10px 0;"
+                + "  border-radius: 8px;"
+                + "  border: 1px solid #ccc;"
+                + "}"
+                + "button {"
+                + "  width: 100%;"
+                + "  padding: 12px;"
+                + "  background-color: #4CAF50;"
+                + "  color: white;"
+                + "  border: none;"
+                + "  border-radius: 8px;"
+                + "  cursor: pointer;"
+                + "  font-size: 16px;"
+                + "}"
+                + "button:hover {"
+                + "  background-color: #45a049;"
+                + "}"
+                + ".msg {"
+                + "  color: red;"
+                + "  text-align: center;"
+                + "}"
+                + "</style>"
+                + "</head>"
+                + "<body>"
+                + "<div class='container'>"
+                + "<div class='msg'>" + msg + "</div>"
+                + "<h2>Iniciar sesión</h2>"
+                + "<form action='/inicio' method='post'>"
+                + "<input name='email' placeholder='Correo electrónico' required>"
+                + "<input name='password' type='password' placeholder='Contraseña' required>"
+                + "<button>Entrar</button>"
+                + "</form>"
+                + "<h2>Registro</h2>"
+                + "<form action='/registro' method='post'>"
+                + "<input name='email' placeholder='Correo electrónico' required>"
+                + "<input name='password' type='password' placeholder='Contraseña'"
+                + " pattern='(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}'"
+                + " title='Mínimo 6 caracteres, letras y números' minlength='6' required>"
+                + "<button>Registrarse</button>"
+                + "</form>"
+                + "</div></body></html>";
+    }
+
 }

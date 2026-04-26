@@ -8,6 +8,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
+import javax.net.ssl.SSLSocket;
+import java.util.logging.Logger;
 
 /**
  * Procesa las peticiones HTTP entrantes de forma concurrente. Implementa la
@@ -21,33 +24,33 @@ import java.net.Socket;
  * @author Antonio Naranjo Castillo
  * @version 1.0
  */
-public class HiloServidor implements Runnable {
+public class HiloServidorSSL implements Runnable {
 
     // Declaración de variables inmutables
     private final int OK = 200;
     private final int NOTFOUND = 404;
 
-    private final Socket socket;
+    private final SSLSocket socket;
+    private final Logger logger = Logger.getLogger("MiLog");
+
     private final Itv itv;
 
     /**
      * Constructor de la clase. Inicializa el hilo con el socket del cliente y
      * el recurso compartido.
      *
-     * @param socket Conexión activa con el cliente.
+     * @param cliente Conexión activa con el cliente.
      * @param itv Recurso compartido para la gestión de líneas.
      */
-    public HiloServidor(Socket socket, Itv itv) {
-        this.socket = socket;
+    public HiloServidorSSL(SSLSocket cliente, Itv itv) {
+        this.socket = cliente;
         this.itv = itv;
     }
 
     @Override
     public void run() {
 
-        try (Socket s = this.socket; 
-             BufferedReader entrada = new BufferedReader(new InputStreamReader(s.getInputStream())); 
-             PrintWriter salida = new PrintWriter(s.getOutputStream(), true)) {
+        try (Socket s = this.socket; BufferedReader entrada = new BufferedReader(new InputStreamReader(s.getInputStream())); PrintWriter salida = new PrintWriter(s.getOutputStream(), true)) {
 
             // Se recoge la petición
             String peticion = entrada.readLine();
@@ -89,10 +92,59 @@ public class HiloServidor implements Runnable {
                 // Comienza el flujo de trabajo, se atienden las peticiones
                 String respuestaHTML;
 
-                // Se muestra la página principal que contiene el panel general estados de matrículas
                 if (ruta.equals("/")) {
 
+                    // Página principal se muestra el formulario vacío
+                    respuestaHTML = construirRespuesta(OK, PaginasHTML.login(""));
+
+                } else if (ruta.equals("/inicio") && peticion.startsWith("POST")) {
+                    String email = cuerpo.toString().split("&")[0].split("=")[1].replace("%40", "@");
+                    String password = cuerpo.toString().split("&")[1].split("=")[1];
+                    System.out.println("Debug --> usuario: " + email + " | contraseña: " + password);
+
+                    if (Cifrado.usuarioExiste(email) && Cifrado.credencialesCorrectas(email, password)) {
+                        respuestaHTML = construirRespuesta(200, PaginasHTML.htmlIndex(itv.generarPanel()));
+
+                    } else {
+                        logger.warning("Login incorrecto: " + email);
+                        respuestaHTML = construirRespuesta(200, PaginasHTML.login("Usuario o contraseña incorrectos"));
+                    }
+
+                } else if (ruta.equals("/inicio") && peticion.startsWith("GET")) {
+
                     respuestaHTML = construirRespuesta(OK, PaginasHTML.htmlIndex(itv.generarPanel()));
+
+                } else if (ruta.equals("/registro") && peticion.startsWith("POST")) {
+                    String email = cuerpo.toString().split("&")[0].split("=")[1].replace("%40", "@");
+                    String password = cuerpo.toString().split("&")[1].split("=")[1];
+                    System.out.println("Debug --> usuario: " + email + " | contraseña: " + password);
+
+                    if (!Validacion.validarEmail(email)) {
+                        // Email con formato incorrecto
+                        logger.warning("Usuario (email) no cumple requisitos : " + email);
+                        respuestaHTML = construirRespuesta(200, PaginasHTML.login("El formato del email no es válido"));
+
+                    } else if (!Validacion.validarPassword(password)) {
+                        // Contraseña que no cumple el patrón
+                        logger.warning("Contraseña no cumple requisitos: " + password);
+                        respuestaHTML = construirRespuesta(200, PaginasHTML.login("La contraseña debe tener mínimo 6 caracteres alfanuméricos"));
+
+                    } else if (Cifrado.usuarioExiste(email)) {
+                        // El usuario ya está registrado
+                        logger.warning("Usuario (email) ya existe en el registro : " + email);
+                        respuestaHTML = construirRespuesta(200, PaginasHTML.login("El usuario ya está registrado"));
+
+                    } else {
+                        // Todo correcto → registramos
+                        String lineaUsuario = email + ":" + password;
+                        if (Cifrado.cifrarBCrypt(lineaUsuario)) {
+                            respuestaHTML = construirRespuesta(200,
+                                    PaginasHTML.login("Registro exitoso, ya puedes iniciar sesión"));
+                        } else {
+                            respuestaHTML = construirRespuesta(200,
+                                    PaginasHTML.login("Error en el registro, inténtalo de nuevo"));
+                        }
+                    }
 
                     // Se muestra la página de reservas
                 } else if (ruta.startsWith("/reservar") && peticion.startsWith("GET")) {
@@ -105,19 +157,17 @@ public class HiloServidor implements Runnable {
                     // Firefox cambia el espacio en blanco por +
                     String matricula = cuerpo.toString().split("=")[1].replace('+', ' ').trim().toUpperCase();
                     String mensajeError = "";
-                    
-                    // Primero se valida el formato de la matrícula
-                    
+
 //                    // Debug --> Ver caracteres individuales, Firefox cambia el espacio por +
 //                    for (char c : matricula.toCharArray()) {
 //                        System.out.println("Char: " + c + " (Código: " + (int) c + ")");
 //                    }
-
+                    // Primero se valida el formato de la matrícula
                     if (!Itv.validarMatricula(matricula)) {
                         mensajeError = "<p style='color:yellow;'>ERROR: Formato de matrícula "
                                 + "inválido. Use el formato 1234 ABC.</p>";
 
-                    // Si el formato es correcto, se comprueba que no esté ya registrada
+                        // Si el formato es correcto, se comprueba que no esté ya registrada
                     } else if (Itv.getCitas().containsKey(matricula)) {
                         mensajeError = "<p style='color:yellow;'>ERROR: La matrícula "
                                 + matricula + " ya tiene una cita registrada.</p>";
@@ -185,12 +235,12 @@ public class HiloServidor implements Runnable {
      * @param contenido Cuerpo del mensaje en formato HTML.
      * @return Cadena completa con el protocolo HTTP.
      */
-    public String construirRespuesta(int codigo, String contenido) {
-        return (codigo == 200 ? "HTTP/1.1 200 OK" : "HTTP/1.1 404 Not Found") + "\n" // Línea inicial
-                + "Content-Type: text/html; charset=UTF-8" + "\n" // Metadatos
-                + "Content-Length: " + contenido.length() + "\n"
-                + "\n" // Línea vacía
-                + contenido;                                                                // Cuerpo
+    private static String construirRespuesta(int codigo, String contenido) {
+        return (codigo == 200 ? "HTTP/1.1 200 OK" : "HTTP/1.1 404 Not Found") + "\r\n" // Línea inicial
+                + "Content-Type: text/html; charset=UTF-8" + "\r\n" // Metadatos
+                + "Content-Length: " + contenido.getBytes(StandardCharsets.UTF_8).length + "\r\n" // getBytes para longitud exacta
+                + "\r\n" // Línea vacía
+                + contenido;
     }
 
 }

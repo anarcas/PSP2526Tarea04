@@ -1,0 +1,4 @@
+2026-04-26T19:05:03.582189887Z - Usuario (email) no cumple requisitos : anarcas
+2026-04-26T19:05:54.194730619Z - Login incorrecto: anarcas%23ymail.com
+2026-04-26T19:06:07.549734688Z - Login incorrecto: anarcas@ymail.com
+2026-04-26T19:07:02.430482212Z - Login incorrecto: asdjh

@@ -2,3 +2,404 @@
 2026-04-26T19:05:54.194730619Z - Login incorrecto: anarcas%23ymail.com
 2026-04-26T19:06:07.549734688Z - Login incorrecto: anarcas@ymail.com
 2026-04-26T19:07:02.430482212Z - Login incorrecto: asdjh
+2026-04-27T08:43:00.831900Z - Usuario (email) ya existe en el registro : anarcas78@hotmail.com
+2026-04-27T08:43:37.673695100Z - Login incorrecto: defg
+2026-04-27T08:43:50.934404Z - Login incorrecto: anarcas79@hotmail.com
+2026-04-27T08:47:16.014195100Z - Login incorrecto: anarcas79@hotmail.com
+2026-04-27T08:49:11.067172100Z - Login incorrecto: anarcas79@hotmail.com
+2026-05-02T18:19:27.753213Z - Usuario (email) ya existe en el registro : anarcas@ymail.com
+2026-05-02T19:25:06.755615400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:16.032682700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:16.331070100Z - Usuario (email) ya existe en el registro: anarcas@ymail.com
+2026-05-02T19:25:31.747870200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:25:34.216300900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:35.697482100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:42.244340Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:25:45.245792300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:51.778921200Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:25:53.985991700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:25:54.842032800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:25:59.360879300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:01.564626800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:02.804776200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:04.883931300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:26:07.213008700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:09.370900500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:26:11.584586900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:13.776878800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:15.933759Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:16.746068Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:29.497948400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:31.292624800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:26:33.430757Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:59:45.158664400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:59:45.909117700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:59:45.913118900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:59:51.356508600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:59:51.362655300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T19:59:52.820534600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T19:59:52.826997800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:31.044842600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:07:35.879585Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:07:38.272655Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:40.347774Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:42.411413300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:07:44.466490400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:07:45.662774700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:45.688533200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:57.037724500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:07:59.921970400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:01.135705700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:03.106348600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:04.345198200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:05.413972500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:06.458511700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:08.514392900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:13.713611900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:08:43.699160Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:09:30.353924800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:09:34.932732600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:09:55.827317Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:09:59.472781300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:10:01.299241400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:10:08.587388400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:10:10.626042100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:10:13.430320700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:10:19.637057300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:10:28.650786400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:12:23.809316400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:12:31.962646Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:12:35.944571600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:12:40.369671Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:14:38.519984700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:14:40.733739800Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:14:50.058146900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:14:52.459190Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:14:52.601298500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:14:57.394139800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:14:59.442483600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:15:00.504719300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:03.894909900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:05.310608Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:16.189310400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:18.236521400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:20.071150500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:23.147481700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:28.392180100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:30.797711900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:31.859674300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:33.475032900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:39.173152800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:41.221923Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:43.272528800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:44.729963900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:51.054449300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:15:52.195744700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:09.185792200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:10.019612600Z - Error de entrada/salida: Connection reset
+2026-05-02T22:16:14.265231300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:15.854480600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:22.219597Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:22.231871700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:29.199464100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:30.984901400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:35.043545500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:37.352879400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:37.561035700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:37.573821200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:43.180052400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:16:45.037153800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:17:30.419108100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:17:32.736768500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:22:43.074188500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:22:48.615206400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:22:50.141012600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:22:52.903469Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:22:54.208596100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:22:57.422223800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:22:58.597254200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:09.115531300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:11.189642100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:23:13.251006500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:15.309363700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:17.380834100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:19.453368700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:23:21.507411900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:23.564517200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:25.620776Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:23:27.679974900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:29.746473200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:31.808239900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:33.858458800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:35.912733300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:37.972317Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:40.020343700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:42.070180400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:44.127123100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:46.185180100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:48.244721500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:50.310222800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:52.374750400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:54.426620300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:23:56.488960900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:23:58.541737400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:00.591149700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:02.645037800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:04.708072600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:06.760333900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:08.809325700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:10.871863100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:12.931598800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:14.980875900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:17.042923800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:19.086757900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:21.145183100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:23.205163400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:25.251361500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:27.290672800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:29.337011300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:31.399049800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:33.464721800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:35.522782200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:37.575799300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:39.635819700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:41.692830600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:43.741520800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:24:43.941603600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:14.905794Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:30:21.685012900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:30:23.921382800Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:30:29.335412700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:31.714027800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:32.049297600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:34.906226Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:36.274883900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:38.190286800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:39.146124100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:30:41.859617Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:42.862677900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:45.052884800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:47.104132900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:48.812163900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:30:51.480196100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:03.519615100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:31:04.454433700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:08.780340Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:11.701717Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:13.749489900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:15.786912700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:17.841319500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:19.897981500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:21.952622800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:24.008899700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:31:26.070269Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:31:28.124922700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:31:30.171387600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:32.220041200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:34.274041500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:36.335740200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:38.394156400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:40.444647200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:42.490601600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:31:44.545463100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:46.594915300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:48.649435Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:50.713566700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:52.763287900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:54.823793800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:56.872655400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:31:58.941531800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:01.006212400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:03.055250100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:05.117427500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:07.166646700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:09.224052500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:11.283704700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:13.333444800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:15.384996300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:17.441092100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:19.488810600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:21.540872500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:23.591580300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:25.651954300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:27.695943800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:29.750557200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:31.803885700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:33.860209400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:35.915482Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:37.964144900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:40.020337300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:42.072648600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:44.123041900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:46.176587600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:48.243355700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:50.290340700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:52.344804100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:54.396314800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:56.440425400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:32:58.498393Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:00.559894100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:02.614938900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:04.670452Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:06.728363Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:08.794922500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:10.862663900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:12.918307700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:14.973905200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:17.021783900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:19.081035800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:21.144699800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:23.199957300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:25.257262100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:27.318989300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:29.371541300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:31.430208600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:33.473927900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:35.519472600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:37.574675700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:39.631280900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:41.693196900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:43.744874Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:45.796600500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:47.855219700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:49.911671600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:51.971256900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:54.029643600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:56.086027800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:33:58.139451300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:00.198531900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:02.258194400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:04.306132900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:06.361763500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:08.414143500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:10.473658Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:12.529865400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:14.586693Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:34:16.639312600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:18.706764500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:20.762373200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:22.827498400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:24.885659300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:26.943028700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:28.990544200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:31.053395600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:33.108503400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:35.155923800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:37.215931800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:39.262373900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:41.318796800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:43.373032500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:45.426466400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:47.469445200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:34:49.527614400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:10.323437400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:11.838349500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:16.244376100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:18.336759800Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:20.410264400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:21.235328800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:23.314241200Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:24.167493Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:35:26.103611800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:27.065047700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:34.622971Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:35:40.057276Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:12.674683500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:36:19.886739700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:21.713871500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:36:23.571146400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:24.155132400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:26.012797600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:36:27.622118400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:29.677777900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:30.959740300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:41.316625500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:43.365165800Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:36:45.418555700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:36:47.470273400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:49.526765600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:51.582367300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:51.922639700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:36:54.200621900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:37:00.158703700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:02.202056400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:04.255987100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:04.992326900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:09.024173500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:13.272519400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:13.288293200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:17.072090900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:37:18.770016Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:09.248007500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:41:14.489773200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:16.057154300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:21.982482600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:23.631346900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:25.213674400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:25.918520900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:27.682714500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:28.413805200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:30.863896200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:31.686969Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:34.370442200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:41:55.986664300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:00.024777600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:02.070846700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:03.205009500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:10.019780500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:10.958547200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:12.059571600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:14.098342600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:14.472978700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:16.724040500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:17.449273900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:19.510679Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:21.565302900Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:23.624501300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:25.684134500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:27.737270300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:29.814302700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:31.872637100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:33.930597Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:35.984873700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:38.032021800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:40.095579100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:42.146125500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:44.196699100Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:42:46.263302200Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:48.333400400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:42:50.387312800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:22.270372500Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:43:22.271373Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:43:35.644512300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:36.944662300Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:43:39.653207Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:40.461512700Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:43:42.749607600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:43.707376700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:46.170233400Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:46.958068600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:49.550165400Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:43:51.832157700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:53.898147700Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:54.280014100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:43:57.101514100Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:01.807710200Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:47:08.901990600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:10.753923300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:15.376038Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:17.136259600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:18.771581300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:19.402092300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:26.043400600Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:33.990886Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:36.055725600Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:47:38.109452900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:40.159372800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:42.223005800Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:44.280442200Z - Error de entrada/salida: Se ha anulado una conexión establecida por el software en su equipo host.
+2026-05-02T22:47:46.344345900Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:48.398428500Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:50.465685300Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:52.519Z - Error de entrada/salida: Received fatal alert: certificate_unknown
+2026-05-02T22:47:54.575563100Z - Error de entrada/salida: Received fatal alert: certificate_unknown

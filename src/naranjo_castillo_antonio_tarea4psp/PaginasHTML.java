@@ -15,6 +15,13 @@ import java.util.Map;
  */
 public class PaginasHTML {
 
+    // Estilo común para el botón de cerrar sesión
+    private static final String CSS_LOGOUT
+            = ".btn-logout { position: absolute; top: 20px; right: 20px; background: #333; color: white; "
+            + "padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; border: 1px solid #ff3333; }"
+            + ".btn-logout:hover { background: #ff3333; } "
+            + ".info-sesion { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin: 10px auto; width: fit-content; border: 1px dashed #ff8888; }";
+
     /**
      * Define la estructura de la página principal.
      *
@@ -76,8 +83,10 @@ public class PaginasHTML {
                 + ".linea { font-size: 24px; }"
                 + ".verde { color: #00ff00; }"
                 + ".rojo { color: #ff3333; }"
+                + CSS_LOGOUT
                 + "</style>"
                 + "</head><body>"
+                + "<a href='/cerrarSesion' class='btn-logout'>Cerrar Sesión</a>"
                 + "<h1 style='color:#ff5555;'>ITV del Infierno</h1>"
                 + "<form action='/reservar' method='GET'>"
                 + "<button class='boton'>Reservar Cita</button>"
@@ -92,7 +101,7 @@ public class PaginasHTML {
                 + "</div></body></html>";
     }
 
-    public static String htmlReservar(String mensajeError) {
+    public static String htmlReservar(String mensajeError, String ultima, int total) {
         return "<html><head><meta charset='UTF-8'><title>Reservar Cita</title>"
                 + "<style>"
                 + "body { background: linear-gradient(135deg,#550000,#220000); "
@@ -102,9 +111,12 @@ public class PaginasHTML {
                 + "        border:none; border-radius:8px; font-size:18px; cursor:pointer; }"
                 + "button:hover { background:#cc0000; }"
                 + "a { color:#ffaaaa; font-size:20px; }"
+                + CSS_LOGOUT
                 + "</style></head>"
                 + "<body>"
+                + "<a href='/cerrarSesion' class='btn-logout'>Cerrar Sesión</a>"
                 + "<h1>Reservar Cita ITV</h1>"
+                + "<div class='info-sesion'>Última inspección: <b>" + ultima + "</b> | Total inspecciones esta sesión: <b>" + total + "</b></div>"
                 + mensajeError
                 + "<form action='/reservar' method='POST'>"
                 + "Matricula: <input type='text' name='matricula' required>"
@@ -115,20 +127,36 @@ public class PaginasHTML {
                 + "</body></html>";
     }
 
-    public static String htmlPasarITV(String matriculaPrellenada, String resultadoFragmento) {
+    public static String htmlPasarITV(String matriculaPrellenada, String resultadoFragmento, String ultima, int total) {
         String valor = (matriculaPrellenada != null) ? matriculaPrellenada : "";
 
         return "<html><head><meta charset='UTF-8'><title>Pasar ITV</title>"
                 + "<style>"
+                + "<meta http-equiv='refresh' content='1; url=/pasar'>"
                 + "body { background: linear-gradient(135deg, #000000, #440000); color:white; font-family:Arial; text-align:center; padding-top:40px; }"
                 + "h1 { color:#ff4444; text-shadow:0 0 10px #ff0000; }"
+                // --- ESTILO PARA LOS DATOS DE SESIÓN ---
+                + ".info-sesion { "
+                + "  background: rgba(255, 255, 255, 0.1); "
+                + "  border: 1px dashed #ff4444; "
+                + "  padding: 15px; "
+                + "  width: fit-content; "
+                + "  margin: 0 auto 25px auto; "
+                + "  border-radius: 10px; "
+                + "  font-size: 18px; "
+                + "  color: #ffaaaa; "
+                + "}"
+                // ---------------------------------------
                 + "input { padding:15px; font-size:24px; border-radius:10px; border:3px solid #ff0000; background:#330000; color:white; width:280px; text-align:center; }"
                 + "button { background:#ff3333; color:white; padding:15px 35px; border:none; border-radius:10px; font-size:22px; cursor:pointer; transition:0.3s; }"
                 + "button:hover { background:#cc0000; transform:scale(1.05); }"
                 + "a { color:#ffaaaa; font-size:22px; text-decoration:none; }"
                 + "a:hover { text-decoration:underline; }"
+                + CSS_LOGOUT
                 + "</style></head><body>"
+                + "<a href='/cerrarSesion' class='btn-logout'>Cerrar Sesión</a>"
                 + "<h1>Entrada a la ITV del Infierno</h1>"
+                + "<div class='info-sesion'>Última inspección: <b>" + ultima + "</b> | Total inspecciones esta sesión: <b>" + total + "</b></div>"
                 + "<form action='/pasar' method='POST'>"
                 + "Matrícula:<br><br>"
                 + "<input type='text' name='matricula' required value='" + valor + "'>"
@@ -155,7 +183,7 @@ public class PaginasHTML {
             + "<body>"
             + "<h1>Error 404</h1>"
             + "<p>La página que buscas no existe o no se encuentra disponible.</p>"
-            + "<a class='button' href='/inicio'>Volver al inicio</a>"
+            + "<a class='button' href='/'>Volver a iniciar sesión</a>"
             + "</body></html>";
 
     public static String htmlResultado(String contenido) {
@@ -210,7 +238,7 @@ public class PaginasHTML {
     }
 
     // Método login página de registro y logueo
-    public static String login(String msg) {
+    public static String login(String msg, String color) {
         return "<!DOCTYPE html>"
                 + "<html lang='es'>"
                 + "<head>"
@@ -258,7 +286,7 @@ public class PaginasHTML {
                 + "  background-color: #45a049;"
                 + "}"
                 + ".msg {"
-                + "  color: red;"
+                + "  color: " + color + ";"
                 + "  text-align: center;"
                 + "}"
                 + "</style>"
@@ -279,6 +307,41 @@ public class PaginasHTML {
                 + " pattern='(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}'"
                 + " title='Mínimo 6 caracteres, letras y números' minlength='6' required>"
                 + "<button>Registrarse</button>"
+                + "</form>"
+                + "</div></body></html>";
+    }
+
+    /**
+     * Genera la página que se muestra cuando un usuario intenta acceder a una
+     * ruta sin haber iniciado sesión previamente.
+     *
+     * @return Página HTML de acceso no autorizado.
+     */
+    public static String htmlIntruso() {
+        return "<!DOCTYPE html>"
+                + "<html lang='es'><head>"
+                + "<meta charset='UTF-8'>"
+                + "<title>Acceso denegado</title>"
+                + "<style>"
+                + "body { font-family: Arial, sans-serif;"
+                + "  background: linear-gradient(135deg, #ffb3b3, #ffd6d6);"
+                + "  display: flex; justify-content: center;"
+                + "  align-items: center; height: 100vh; margin: 0; }"
+                + ".card { background: white; padding: 40px;"
+                + "  border-radius: 15px; text-align: center;"
+                + "  box-shadow: 0 8px 16px rgba(0,0,0,0.2); width: 350px; }"
+                + "h1 { color: #cc0000; }"
+                + "p { color: #555; }"
+                + "button { background: #cc0000; color: white;"
+                + "  padding: 12px 24px; border: none;"
+                + "  border-radius: 8px; cursor: pointer; font-size: 16px; }"
+                + "button:hover { background: #990000; }"
+                + "</style></head><body>"
+                + "<div class='card'>"
+                + "<h1>¡Intruso!</h1>"
+                + "<p>No tienes permiso para acceder a la página solicitada.</p>"
+                + "<form action='/' method='POST'>"
+                + "<button>Volver a iniciar sesión</button>"
                 + "</form>"
                 + "</div></body></html>";
     }

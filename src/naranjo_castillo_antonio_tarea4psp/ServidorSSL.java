@@ -12,8 +12,6 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
 import java.util.logging.Level;
@@ -68,7 +66,7 @@ public class ServidorSSL {
                     System.out.println("Cliente conectado");
 
                     // Crea e inicia un nuevo hilo para procesar la petición HTTP de forma asíncrona
-                    Thread hiloServidor = new Thread(new HiloServidorSSL(socketSsl,itvInfierno));
+                    Thread hiloServidor = new Thread(new HiloServidorSSLCookies(socketSsl,itvInfierno));
                     hiloServidor.start(); // Inicia el hilo;
                 } catch (IOException e) {
                     logger.warning("Error aceptando cliente: " + e.getMessage());

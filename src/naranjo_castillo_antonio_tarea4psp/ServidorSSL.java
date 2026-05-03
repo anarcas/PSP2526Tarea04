@@ -12,6 +12,8 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
 import java.util.logging.Level;
@@ -24,25 +26,32 @@ import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.SSLSocket;
 
 /**
- * Representa el servidor principal que gestiona las conexiones HTTP para la
- * ITV. Esta clase inicializa el recurso compartido y escucha peticiones en un
- * puerto específico.
+ * Representa el punto de entrada principal del servidor seguro para la ITV.
+ *
+ * Se encarga de inicializar el contexto criptográfico SSL, arrancar el socket
+ * de escucha en el puerto seguro y gestionar la concurrencia de la aplicación
+ * mediante la creación de un nuevo hilo para cada cliente que se conecta.
  *
  * @author Antonio Naranjo Castillo
- *
  * @version 1.0
  */
 public class ServidorSSL {
 
+    /**
+     * Registrador de eventos del sistema que almacena las incidencias en el
+     * archivo de texto.
+     */
     private static final Logger logger = configurarLogger();
 
     /**
-     * Arranca el servicio, instancia el recurso compartido 'Itv' y entra en un
-     * bucle infinito para aceptar clientes, delegando cada uno a un hilo
-     * independiente.
+     * Arranca el servicio principal del servidor de la ITV. Crea la instancia
+     * del recurso compartido que controla el estado de las líneas, inicializa
+     * el socket del servidor seguro y entra en un ciclo continuo para aceptar
+     * conexiones entrantes de los navegadores web.
      *
-     * @param args Argumentos de la línea de comandos (no utilizados).
-     * @throws IOException Si ocurre un error al abrir el socket o aceptar
+     * @param args Argumentos de la línea de comandos pasados al iniciar el
+     * programa.
+     * @throws IOException Si ocurre un problema de entrada o salida al aceptar
      * conexiones.
      */
     public static void main(String[] args) throws IOException {
@@ -66,7 +75,7 @@ public class ServidorSSL {
                     System.out.println("Cliente conectado");
 
                     // Crea e inicia un nuevo hilo para procesar la petición HTTP de forma asíncrona
-                    Thread hiloServidor = new Thread(new HiloServidorSSLCookies(socketSsl,itvInfierno));
+                    Thread hiloServidor = new Thread(new HiloServidorSSLCookies(socketSsl, itvInfierno));
                     hiloServidor.start(); // Inicia el hilo;
                 } catch (IOException e) {
                     logger.warning("Error aceptando cliente: " + e.getMessage());
@@ -77,6 +86,17 @@ public class ServidorSSL {
         }
     }
 
+    /**
+     * Configura el entorno de seguridad y crea el socket del servidor seguro.
+     * 
+     * Carga el almacén de claves desde el archivo del disco, recupera el certificado
+     * digital del servidor, inicializa el gestor de claves de tipo SunX509 y devuelve
+     * un socket preparado para escuchar en el puerto seguro especificado.
+     *
+     * @return El socket del servidor configurado con el protocolo de cifrado SSL/TLS.
+     * @throws RuntimeException Si ocurre cualquier error relacionado con la carga de las
+     * claves, el formato del almacén o el algoritmo de cifrado.
+     */
     private static SSLServerSocket crearServidorSSL() {
 
         try {
@@ -114,6 +134,14 @@ public class ServidorSSL {
         }
     }
 
+    /**
+     * Inicializa y parametriza el sistema de registro de eventos en archivo.
+     * 
+     * Crea un manejador de archivos de texto que añade información de manera continua
+     * y aplica un formato de fecha y hora personalizado para cada registro guardado.
+     *
+     * @return El objeto Logger completamente configurado y listo para registrar eventos.
+     */
     private static Logger configurarLogger() {
 
         Logger logger = Logger.getLogger("MiLog");
@@ -126,7 +154,7 @@ public class ServidorSSL {
             fh.setFormatter(new Formatter() {
                 @Override
                 public String format(LogRecord record) {
-                    String fechaHora = record.getInstant().toString();
+                    String fechaHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS"));
                     return String.format("%s - %s%n",
                             fechaHora,
                             record.getMessage());

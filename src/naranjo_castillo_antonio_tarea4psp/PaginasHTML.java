@@ -7,15 +7,21 @@ package naranjo_castillo_antonio_tarea4psp;
 import java.util.Map;
 
 /**
- * Almacena las constantes y métodos estáticos que definen la interfaz web. Se
- * encarga de la presentación HTML y el estilo CSS de la aplicación.
+ * Almacena las constantes y métodos estáticos que definen la interfaz web.
+ *
+ * Esta clase se encarga exclusivamente de proporcionar el código HTML y los
+ * estilos CSS necesarios para mostrar las diferentes páginas de la aplicación
+ * de la ITV.
  *
  * @author Antonio Naranjo Castillo
  * @version 1.0
  */
 public class PaginasHTML {
 
-    // Estilo común para el botón de cerrar sesión
+    /**
+     * Estilo CSS común utilizado para el botón de cierre de sesión y la caja de
+     * información de sesión en las distintas páginas privadas.
+     */
     private static final String CSS_LOGOUT
             = ".btn-logout { position: absolute; top: 20px; right: 20px; background: #333; color: white; "
             + "padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; border: 1px solid #ff3333; }"
@@ -23,10 +29,14 @@ public class PaginasHTML {
             + ".info-sesion { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; margin: 10px auto; width: fit-content; border: 1px dashed #ff8888; }";
 
     /**
-     * Define la estructura de la página principal.
+     * Genera la estructura HTML de la página principal (Index / Inicio) de la
+     * aplicación. Incluye una cabecera con refresco automático cada 2 segundos
+     * hacia el endpoint {@code /inicio}, el panel dinámico de las líneas de
+     * inspección y los botones de navegación principales.
      *
-     * @param panelHTML Contenido dinámico del panel de líneas.
-     * @return Página de inicio completa.
+     * @param panelHTML Cadena de texto con el fragmento HTML dinámico que
+     * representa el estado de las líneas.
+     * @return Una cadena con el documento HTML completo de la página de inicio.
      */
     public static String htmlIndex(String panelHTML) {
         return "<html><head>"
@@ -101,6 +111,23 @@ public class PaginasHTML {
                 + "</div></body></html>";
     }
 
+    /**
+     * Genera la estructura HTML de la página para reservar una cita de
+     * inspección.
+     *
+     * Muestra información de la sesión activa del usuario, posibles mensajes de
+     * error en el envío del formulario y los campos para registrar una
+     * matrícula.
+     *
+     * @param mensajeError Mensaje explicativo si la validación previa falló, o
+     * una cadena vacía si no hay errores.
+     * @param ultima Matrícula utilizada en la última reserva válida de la
+     * sesión actual.
+     * @param total Número total de reservas realizadas durante la sesión
+     * actual.
+     * @return Una cadena con el documento HTML completo de la página de
+     * reservas.
+     */
     public static String htmlReservar(String mensajeError, String ultima, int total) {
         return "<html><head><meta charset='UTF-8'><title>Reservar Cita</title>"
                 + "<style>"
@@ -127,15 +154,33 @@ public class PaginasHTML {
                 + "</body></html>";
     }
 
+    /**
+     * Genera la estructura HTML de la página para pasar la ITV (entrada a
+     * línea).
+     *
+     * Proporciona un formulario para introducir una matrícula, con la
+     * posibilidad de prellenarla con valores previos, y muestra el resultado de
+     * las pruebas de inspección.
+     *
+     * @param matriculaPrellenada Matrícula que aparecerá escrita por defecto en
+     * el campo de entrada.
+     * @param resultadoFragmento Fragmento HTML que contiene el resumen con el
+     * resultado de las pruebas.
+     * @param ultima Matrícula procesada en la última operación de inspección de
+     * la sesión.
+     * @param total Contador de inspecciones efectuadas durante la sesión
+     * activa.
+     * @return Una cadena con el documento HTML completo de la página para pasar
+     * la ITV.
+     */
     public static String htmlPasarITV(String matriculaPrellenada, String resultadoFragmento, String ultima, int total) {
+
         String valor = (matriculaPrellenada != null) ? matriculaPrellenada : "";
 
         return "<html><head><meta charset='UTF-8'><title>Pasar ITV</title>"
                 + "<style>"
-                + "<meta http-equiv='refresh' content='1; url=/pasar'>"
                 + "body { background: linear-gradient(135deg, #000000, #440000); color:white; font-family:Arial; text-align:center; padding-top:40px; }"
                 + "h1 { color:#ff4444; text-shadow:0 0 10px #ff0000; }"
-                // --- ESTILO PARA LOS DATOS DE SESIÓN ---
                 + ".info-sesion { "
                 + "  background: rgba(255, 255, 255, 0.1); "
                 + "  border: 1px dashed #ff4444; "
@@ -146,7 +191,6 @@ public class PaginasHTML {
                 + "  font-size: 18px; "
                 + "  color: #ffaaaa; "
                 + "}"
-                // ---------------------------------------
                 + "input { padding:15px; font-size:24px; border-radius:10px; border:3px solid #ff0000; background:#330000; color:white; width:280px; text-align:center; }"
                 + "button { background:#ff3333; color:white; padding:15px 35px; border:none; border-radius:10px; font-size:22px; cursor:pointer; transition:0.3s; }"
                 + "button:hover { background:#cc0000; transform:scale(1.05); }"
@@ -168,6 +212,10 @@ public class PaginasHTML {
                 + "</body></html>";
     }
 
+    /**
+     * Documento HTML estático que representa la página de error 404 (Recurso no
+     * encontrado).
+     */
     public static final String html_notFound
             = "<html><head><title>Error 404</title><meta charset=UTF-8>"
             + "<link rel=icon href=data:,/>"
@@ -186,6 +234,16 @@ public class PaginasHTML {
             + "<a class='button' href='/'>Volver a iniciar sesión</a>"
             + "</body></html>";
 
+    /**
+     * Genera el fragmento HTML que presenta el resultado visual de una
+     * inspección. Se incluye publicidad humorística del taller adyacente como
+     * elemento estético.
+     *
+     * @param contenido Detalle de las pruebas pasadas o falladas de la
+     * matrícula inspeccionada.
+     * @return Fragmento HTML formateado con el resultado del proceso de
+     * inspección.
+     */
     public static String htmlResultado(String contenido) {
         return "<div style='width:100%; text-align:center;'>"
                 + "<h1 style='font-size:28px; margin-bottom:20px; color:#ffdddd;'>Resultado de la Inspección</h1>"
@@ -203,11 +261,16 @@ public class PaginasHTML {
     }
 
     /**
-     * Construye estructura HTML del resultado de la inspección.
+     * Construye un resumen detallado en formato HTML sobre las pruebas
+     * realizadas a un vehículo. Recorre un mapa de resultados de la inspección.
+     * Si alguna de las pruebas comienza por la palabra "No", el resultado
+     * global se marca como ITV No Superada.
      *
-     * @param matricula Identificador del coche.
-     * @param resultados Mapa con los nombres de las pruebas y sus valores.
-     * @return Cadena formateada para su inserción en el HTML.
+     * @param matricula Identificador único del coche inspeccionado.
+     * @param resultados Mapa que contiene los nombres de las pruebas y sus
+     * valores correspondientes.
+     * @return Cadena formateada en HTML con el veredicto final de la
+     * inspección.
      */
     public static String generarResultadoHTML(String matricula, Map<String, String> resultados) {
 
@@ -237,7 +300,18 @@ public class PaginasHTML {
         return sb.toString();
     }
 
-    // Método login página de registro y logueo
+    /**
+     * Genera el documento HTML completo de la página de Login y Registro de
+     * usuarios. Permite a los usuarios registrarse mediante credenciales que
+     * cumplen con un patrón de seguridad mínimo de caracteres en el navegador.
+     *
+     * @param msg Mensaje de información, éxito o error derivado de la última
+     * acción del usuario.
+     * @param color Código de color CSS (ej. {@code #ff0000}) para aplicar al
+     * mensaje.
+     * @return El documento HTML completo de la pantalla de bienvenida y
+     * autenticación.
+     */
     public static String login(String msg, String color) {
         return "<!DOCTYPE html>"
                 + "<html lang='es'>"
@@ -312,10 +386,13 @@ public class PaginasHTML {
     }
 
     /**
-     * Genera la página que se muestra cuando un usuario intenta acceder a una
-     * ruta sin haber iniciado sesión previamente.
+     * Genera la página HTML de acceso no autorizado.
      *
-     * @return Página HTML de acceso no autorizado.
+     * Se muestra cuando un usuario intenta acceder a rutas finales y privadas
+     * de la aplicación sin haber establecido una sesión de usuario válida
+     * previamente.
+     *
+     * @return El documento HTML completo con la advertencia de intrusión.
      */
     public static String htmlIntruso() {
         return "<!DOCTYPE html>"

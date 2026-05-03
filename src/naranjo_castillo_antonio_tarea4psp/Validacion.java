@@ -8,22 +8,50 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 /**
+ * Proporciona métodos de utilidad para validar el formato de los datos del
+ * usuario.
  *
- * @author anarcas
+ * Verifica mediante expresiones regulares que la información introducida en los
+ * formularios, como el correo electrónico o la contraseña, cumple con los
+ * requisitos mínimos de seguridad y estructura establecidos.
+ *
+ * @author Antonio Naranjo Castillo
+ * @version 1.0
  */
 public class Validacion {
 
-    // Patrón email: texto@texto.texto
+    /**
+     * Expresión regular que define la estructura correcta de un correo
+     * electrónico.
+     *
+     * El patrón exige una secuencia de caracteres alfanuméricos, un símbolo de
+     * arroba @, el nombre del dominio y una extensión final de al menos dos
+     * letras.
+     *
+     */
     private static final String PATRON_EMAIL = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}";
 
-    // Patrón contraseña: mínimo 6 caracteres alfanuméricos
+    /**
+     * Expresión regular que define la estructura correcta de una contraseña
+     * segura.
+     *
+     * El patrón exige que la contraseña tenga un tamaño mínimo de seis
+     * caracteres y esté compuesta exclusivamente por letras y números.
+     *
+     */
     private static final String PATRON_PASSWORD = "[a-zA-Z0-9]{6,}";
 
     /**
-     * Valida si el email tiene un formato correcto
+     * Comprueba si el correo electrónico introducido tiene un formato válido.
      *
-     * @param email email a validar
-     * @return true si el formato es correcto, false en caso contrario
+     * Compara el texto recibido con el patrón de correo electrónico estándar
+     * para confirmar que contiene los elementos obligatorios de una dirección
+     * web.
+     *
+     * @param email Texto que contiene la dirección de correo que se desea
+     * evaluar.
+     * @return El valor lógico true si el texto cumple con la estructura de
+     * correo electrónico, o false si el texto es nulo o incorrecto.
      */
     public static boolean validarEmail(String email) {
         boolean valido = false;
@@ -38,10 +66,15 @@ public class Validacion {
     }
 
     /**
-     * Valida si la contraseña cumple el patrón mínimo de seguridad
+     * Comprueba si la contraseña introducida cumple con los requisitos mínimos.
      *
-     * @param password contraseña a validar
-     * @return true si cumple el patrón, false en caso contrario
+     * Compara el texto recibido con el patrón de seguridad para confirmar que
+     * posee la longitud y los caracteres alfanuméricos necesarios para el
+     * registro.
+     *
+     * @param password Texto que contiene la clave secreta que se desea evaluar.
+     * @return El valor lógico true si la clave cumple con el patrón
+     * establecido, o false si el texto es nulo o demasiado corto.
      */
     public static boolean validarPassword(String password) {
         boolean valido = false;
